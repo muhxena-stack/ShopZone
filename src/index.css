@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@keyframes gahar-galaxy-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes bright-day-bg {
+  0% { background-position: 0% 82%; }
+  50% { background-position: 100% 19%; }
+  100% { background-position: 0% 82%; }
+}
+
+@theme inline {
+  --radius: 0.5rem; /* Sharper edges */
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  /* ... other variables */
+}
+
+:root {
+  --radius: 0.75rem;
+  /* Elegant Light Mode - Cool Gray & Navy Blue */
+  --background: #F0F2F5;
+  --background-start: #F0F2F5;
+  --background-end: #E4E6E9;
+  --foreground: #1C1E21; /* Dark Charcoal */
+  --card: rgba(255, 255, 255, 0.7);
+  --card-foreground: #1C1E21;
+  --popover: rgba(255, 255, 255, 0.8);
+  --popover-foreground: #1C1E21;
+  --primary: #0A3D91; /* Deep Navy Blue */
+  --primary-foreground: #FFFFFF;
+  --secondary: #4F6D7A; /* Slate Gray */
+  --secondary-foreground: #FFFFFF;
+  --muted: rgba(0, 0, 0, 0.1);
+  --muted-foreground: #555555;
+  --accent: #0A3D91;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D32F2F; /* Strong Red */
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.05);
+  --ring: #0A3D91;
+}
+
+.dark {
+  --radius: 0.5rem; /* Sharper for dark mode */
+  /* Fierce Dark Mode - Deep Space & Fiery Orange */
+  --background: #000000;
+  --background-start: #000000;
+  --background-mid: #0F0C29;
+  --background-end: #24243E;
+  --foreground: #F5F5F7; /* Off-white */
+  --card: rgba(20, 20, 40, 0.35);
+  --card-foreground: #F5F5F7;
+  --popover: rgba(10, 10, 20, 0.85);
+  --popover-foreground: #F5F5F7;
+  --primary: #FF4D00; /* Fiery Orange */
+  --primary-foreground: #FFFFFF;
+  --secondary: #D4AF37; /* Molten Gold */
+  --secondary-foreground: #000000;
+  --muted: rgba(255, 77, 0, 0.1);
+  --muted-foreground: #A0A0A0;
+  --accent: #FF4D00;
+  --accent-foreground: #FFFFFF;
+  --destructive: #FF3B30; /* Brighter Red for dark mode */
+  --border: rgba(255, 77, 0, 0.3);
+  --input: rgba(255, 77, 0, 0.15);
+  --ring: #FF4D00;
+}
+
+@layer base {
+  html {
+    background-color: var(--background);
+  }
+  * {
+    @apply border-[var(--border)] outline-[var(--ring)]/50;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+    font-family: 'Inter', sans-serif;
+    transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+  }
+  .light body {
+    background: linear-gradient(135deg, var(--background-start), var(--background-end));
+    background-size: 200% 200%;
+    animation: bright-day-bg 15s ease infinite;
+  }
+  .dark body {
+    background: linear-gradient(225deg, var(--background-start), var(--background-mid), var(--background-end));
+    background-size: 400% 400%;
+    animation: gahar-galaxy-bg 20s ease infinite;
+  }
+  .dark .glow {
+    text-shadow: 0 0 8px var(--primary), 0 0 12px var(--primary), 0 0 18px var(--primary);
+  }
+  .light .card, .dark .card {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  @supports (font-variation-settings: normal) {
+    body {
+      font-family: 'Inter var', sans-serif;
+    }
+  }
+  select,
+  option {
+    background-color: var(--card);
+    color: var(--card-foreground);
+  }
+}
