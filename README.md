@@ -1,12 +1,27 @@
 # Link Pengumpulan Tugas 
+## 🎞️ Presentasi Proyek
 
-## 🎞 Presentasi Proyek
+> Lihat ringkasan visual interaktif dari proyek ini di **Gamma** — lengkap dengan tampilan modern, animasi, dan penjelasan langkah demi langkah.
 
-[![Presentasi di Gamma](https://img.shields.io/badge/🎥_Lihat_Presentasi-Gamma.app-blue?style=for-the-badge)](https://gamma.app/docs/Presentasi-Proyek-Akhir-Reactjs-f96ilptrmirpsc5?mode=present#card-0pckpvbv9821utk)
+<p align="center">
+  <a href="https://gamma.app/docs/Presentasi-Proyek-Akhir-Reactjs-f96ilptrmirpsc5?mode=present#card-0pckpvbv9821utk" target="_blank">
+    <img src="https://img.shields.io/badge/🎥%20Lihat%20Presentasi%20di%20Gamma-00BFA6?style=for-the-badge&logo=slideshare&logoColor=white" alt="Lihat Presentasi di Gamma"/>
+  </a>
+</p>
+
+---
 
 ## 🎬 Video Penjelasan
 
-[![Tonton di YouTube](https://img.shields.io/badge/▶_Tonton_Video-YouTube-red?style=for-the-badge)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+> Tonton video penjelasan proyek ini di YouTube untuk memahami alur kerja, fitur utama, dan implementasi teknis secara menyeluruh.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
+    <img src="https://img.shields.io/badge/▶️%20Tonton%20Video%20Penjelasan-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tonton di YouTube"/>
+  </a>
+</p>
+
+---
 
 # 🛍️ ShopZone
 
