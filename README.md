@@ -41,6 +41,9 @@ Dengan fitur-fitur seperti autentikasi pengguna dan manajemen produk untuk admin
 - **React Context API** — Untuk manajemen state global seperti autentikasi dan data produk.
 
 ---
+## 📂 Struktur Folder
+
+```bash
 /src
 │
 ├── /assets           # File statis seperti gambar dan ikon
@@ -76,6 +79,7 @@ Dengan fitur-fitur seperti autentikasi pengguna dan manajemen produk untuk admin
 ├── App.tsx           # Komponen root aplikasi (router, provider)
 ├── index.css         # File CSS utama + konfigurasi Tailwind
 └── main.tsx          # Entry point aplikasi + Context dan router
+
 
 
 ## 🎞 Presentasi Proyek
