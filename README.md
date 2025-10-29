@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🛍️ ShopZone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ShopZone** adalah aplikasi web e-commerce modern yang memungkinkan pengguna untuk menjelajahi, mencari, dan membeli berbagai produk.  
+Aplikasi ini dibangun dengan fokus pada **pengalaman pengguna** yang bersih, responsif, dan intuitif.  
+Dengan fitur-fitur seperti autentikasi pengguna dan manajemen produk untuk admin, ShopZone dirancang untuk menjadi platform belanja online yang efisien dan menyenangkan.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## React Compiler
+### 👤 Autentikasi Pengguna
+- Sistem login dan logout untuk mengelola akun pengguna serta memastikan sesi yang aman.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛒 Galeri Produk
+- Menampilkan daftar produk dengan gambar, nama, dan informasi singkat.  
+- Mendukung pencarian dan filter untuk kemudahan eksplorasi produk.
 
-## Expanding the ESLint configuration
+### 📄 Detail Produk
+- Halaman khusus setiap produk dengan deskripsi lengkap, harga, dan opsi pembelian.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🧑‍💼 Manajemen Produk (Admin)
+- Admin dapat menambah, mengedit, dan menghapus produk melalui dashboard khusus.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📱 Desain Responsif
+- Tampilan optimal di berbagai perangkat (desktop, tablet, mobile) menggunakan pendekatan **mobile-first**.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🌗 Peralihan Tema
+- Mode **terang (light)** dan **gelap (dark)** untuk kenyamanan visual pengguna.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Teknologi yang Digunakan
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🖥️ Frontend
+- **React** — Library JavaScript untuk membangun antarmuka pengguna berbasis komponen.  
+- **Vite** — Build tool modern dengan Hot Module Replacement (HMR) super cepat.  
+- **TypeScript** — Superset JavaScript dengan dukungan tipe statis.  
+- **Tailwind CSS** — Framework CSS utility-first untuk desain cepat dan konsisten.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ⚙️ State Management
+- **React Context API** — Untuk manajemen state global seperti autentikasi dan data produk.
+
+---
+/src
+│
+├── /assets           # File statis seperti gambar dan ikon
+│
+├── /components       # Komponen React yang dapat digunakan kembali
+│   ├── ErrorBoundary.tsx
+│   ├── Navbar.tsx
+│   ├── ProductCard.tsx
+│   ├── ProductForm.tsx
+│   └── ThemeSwitcher.tsx
+│
+├── /context          # Context API untuk manajemen state global
+│   ├── AuthContext.tsx
+│   └── ProductContext.tsx
+│
+├── /hooks            # Custom hooks untuk logika bersama
+│   ├── useAuth.ts
+│   └── useProducts.ts
+│
+├── /lib              # Utilitas, konfigurasi, dan fungsi pembantu
+│   └── utils.ts
+│
+├── /pages            # Komponen halaman utama aplikasi (routing)
+│   ├── Dashboard.tsx
+│   ├── Login.tsx
+│   ├── ProductDetail.tsx
+│   └── Products.tsx
+│
+├── /types            # Definisi tipe TypeScript global dan interface
+│   └── index.ts
+│
+├── App.css           # Styling global
+├── App.tsx           # Komponen root aplikasi (router, provider)
+├── index.css         # File CSS utama + konfigurasi Tailwind
+└── main.tsx          # Entry point aplikasi + Context dan router
