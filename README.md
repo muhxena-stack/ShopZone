@@ -1,3 +1,13 @@
+# Link Pengumpulan Tugas 
+
+## 🎞 Presentasi Proyek
+
+[![Presentasi di Gamma](https://img.shields.io/badge/🎥_Lihat_Presentasi-Gamma.app-blue?style=for-the-badge)](https://gamma.app/docs/Presentasi-Proyek-Akhir-Reactjs-f96ilptrmirpsc5?mode=present#card-0pckpvbv9821utk)
+
+## 🎬 Video Penjelasan
+
+[![Tonton di YouTube](https://img.shields.io/badge/▶_Tonton_Video-YouTube-red?style=for-the-badge)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
 # 🛍️ ShopZone
 
 **ShopZone** adalah aplikasi web e-commerce modern yang memungkinkan pengguna untuk menjelajahi, mencari, dan membeli berbagai produk.  
@@ -79,13 +89,3 @@ Dengan fitur-fitur seperti autentikasi pengguna dan manajemen produk untuk admin
 ├── App.tsx           # Komponen root aplikasi (router, provider)
 ├── index.css         # File CSS utama + konfigurasi Tailwind
 └── main.tsx          # Entry point aplikasi + Context dan router
-
-
-
-## 🎞 Presentasi Proyek
-
-[![Presentasi di Gamma](https://img.shields.io/badge/🎥_Lihat_Presentasi-Gamma.app-blue?style=for-the-badge)](https://gamma.app/docs/Presentasi-Proyek-Akhir-Reactjs-f96ilptrmirpsc5?mode=present#card-0pckpvbv9821utk)
-
-## 🎬 Video Penjelasan
-
-[![Tonton di YouTube](https://img.shields.io/badge/▶_Tonton_Video-YouTube-red?style=for-the-badge)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
