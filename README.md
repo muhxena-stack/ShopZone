@@ -1,7 +1,7 @@
 # Link Pengumpulan Tugas 
 ## 🎞 Presentasi Proyek
 
-[![Presentasi di Gamma](https://img.shields.io/badge/🎥_Lihat_Presentasi-Gamma.app-blue?style=for-the-badge)]([https://gamma.app/docs/Presentasi-Proyek-Akhir-Reactjs-f96ilptrmirpsc5?mode=present#card-0pckpvbv9821utk](https://gamma.app/docs/ShopZone-3czutaxkab32d9n))
+[![Presentasi di Gamma](https://img.shields.io/badge/🎥_Lihat_Presentasi-Gamma.app-blue?style=for-the-badge)](https://gamma.app/docs/ShopZone-3czutaxkab32d9n)
 
 ## 🎬 Video Penjelasan
 
