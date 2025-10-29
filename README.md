@@ -5,7 +5,7 @@
 
 ## 🎬 Video Penjelasan
 
-[![Tonton di YouTube](https://img.shields.io/badge/▶_Tonton_Video-YouTube-red?style=for-the-badge)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Tonton di YouTube](https://img.shields.io/badge/▶_Tonton_Video-YouTube-red?style=for-the-badge)](https://youtu.be/mWZYmnYZ21Q)
 
 # 🛍️ ShopZone
 
